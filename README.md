@@ -2,7 +2,7 @@
 ## Documentation
 
 Inorder to run the project, 
-- Just clone the project in your current environment.
+- Just clone the project in your current environment. ```https://github.com/bhattarairazu/Proshore-test.git```
 - Make sure Java with version 1.8 and Maven is installed on the machine.
 - Add below properties file in the application.properties inside resource.
 ```
