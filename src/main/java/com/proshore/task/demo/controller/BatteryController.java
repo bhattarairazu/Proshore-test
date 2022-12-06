@@ -25,6 +25,6 @@ public class BatteryController {
 
     @GetMapping("/postcode")
     public ResponseEntity<BatteryResponseDto> getBatteriesWithinPostcodeRange(@RequestParam("start") Integer start, @RequestParam("end") Integer end){
-        return new ResponseEntity<>(batteryService.findAll(start,end),HttpStatus.OK);
+        return new ResponseEntity<>(batteryService.findAllBatteryByPostcodeBetweenRange(start,end),HttpStatus.OK);
     }
 }

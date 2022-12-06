@@ -8,6 +8,6 @@ import java.util.List;
 public interface BatteryService {
     List<Battery> saveAll(List<Battery> batteries);
 
-    BatteryResponseDto findAll(Integer start, Integer end);
+    BatteryResponseDto findAllBatteryByPostcodeBetweenRange(Integer start, Integer end);
 
 }

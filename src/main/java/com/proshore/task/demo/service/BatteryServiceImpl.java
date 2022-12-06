@@ -23,7 +23,7 @@ public class BatteryServiceImpl implements BatteryService{
     }
 
     @Override
-    public BatteryResponseDto findAll(Integer start, Integer end) {
+    public BatteryResponseDto findAllBatteryByPostcodeBetweenRange(Integer start, Integer end) {
         List<Battery> allBatteryWithinRange = batteryRepository.findAllByPostcodeBetween(start,end);
 
         List<String> batteriesName = allBatteryWithinRange.
